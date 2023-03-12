@@ -1,0 +1,12 @@
+{
+	"platform": "auto",
+	"isolate_path": "isolate/",
+
+	"out": "game",
+	"cc": "/usr/bin/cc",
+	"c_flags": [],
+	"c_files": ["src/main.c", "src/game.c", "src/renderer.c", "src/iso.c"],
+	"includes": [],
+	"lib_path": [],
+	"lib": []
+}
