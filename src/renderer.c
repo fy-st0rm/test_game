@@ -1,5 +1,4 @@
 #include "renderer.h"
-#include "iso_graphics/iso_graphics.h"
 
 renderer_t* renderer_new(iso_app* app) {
 	renderer_t* ren = iso_alloc(sizeof(renderer_t));
@@ -84,6 +83,10 @@ void renderer_delete(renderer_t* ren) {
 }
 
 void renderer_push_vertex(renderer_t* ren, vertex_t vert) {
+	if ((ren->buff_sz / 7) / 4 >= MAX_QUAD_CNT) {
+		renderer_end(ren);
+		renderer_begin(ren);
+	}
 	ren->buffer[ren->buff_sz++] = vert.pos.x;
 	ren->buffer[ren->buff_sz++] = vert.pos.y;
 	ren->buffer[ren->buff_sz++] = vert.pos.z;
@@ -105,7 +108,7 @@ void renderer_end(renderer_t* ren) {
 		VBO,
 		(iso_graphics_buffer_update_def) {
 			.start_sz = 0,
-			.end_sz   = MAX_VBO_SIZE,
+			.end_sz   = ren->buff_sz * sizeof(f32),
 			.data     = ren->buffer
 		}
 	);

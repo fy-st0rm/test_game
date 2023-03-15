@@ -28,11 +28,12 @@ void iso_event(iso_app* app, SDL_Event event) {
 	if (event.type == SDL_QUIT) {
 		app->state = ISO_APP_CLOSED;
 	}
+	game_event(game, event);
 }
 
 void iso_update(iso_app* app, f32 dt) {
 	app->graphics->api.clear_window(app->window, (iso_color) { 0.5, 0.5, 0.5, 1 });
-	game_update(game);
+	game_update(game, dt);
 }
 
 void iso_exit(iso_app* app) {

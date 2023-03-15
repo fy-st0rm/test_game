@@ -1,20 +1,5 @@
 [
     {
-        "directory": "/home/st0rm/Documents/c_projects/robo/",
-        "command": "/usr/bin/cc  -Iisolate/includes/ -Iisolate//usr/include/ -Iisolate/isolate/includes -o /home/st0rm/Documents/c_projects/robo/src/main.c.o -c /home/st0rm/Documents/c_projects/robo/src/main.c",
-        "file": "/home/st0rm/Documents/c_projects/robo/src/main.c"
-    },
-    {
-        "directory": "/home/st0rm/Documents/c_projects/robo/",
-        "command": "/usr/bin/cc  -Iisolate/includes/ -Iisolate//usr/include/ -Iisolate/isolate/includes -o /home/st0rm/Documents/c_projects/robo/src/game.c.o -c /home/st0rm/Documents/c_projects/robo/src/game.c",
-        "file": "/home/st0rm/Documents/c_projects/robo/src/game.c"
-    },
-    {
-        "directory": "/home/st0rm/Documents/c_projects/robo/",
-        "command": "/usr/bin/cc  -Iisolate/includes/ -Iisolate//usr/include/ -Iisolate/isolate/includes -o /home/st0rm/Documents/c_projects/robo/src/iso.c.o -c /home/st0rm/Documents/c_projects/robo/src/iso.c",
-        "file": "/home/st0rm/Documents/c_projects/robo/src/iso.c"
-    },
-    {
         "directory": "/home/st0rm/Documents/c_projects/jox/",
         "command": "/usr/bin/cc  -Iisolate/includes/ -Iisolate//usr/include/ -Iisolate/isolate/includes -o /home/st0rm/Documents/c_projects/jox/src/main.c.o -c /home/st0rm/Documents/c_projects/jox/src/main.c",
         "file": "/home/st0rm/Documents/c_projects/jox/src/main.c"
